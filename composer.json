@@ -1,0 +1,37 @@
+{
+  "name": "aponica/image-utils-php",
+  "version": "1.0.0",
+  "description": "Common image manipulations in PHP.",
+  "homepage" : "https://aponica.com/docs/image-utils-php",
+  "funding": [ { "type": "paypal",
+    "url": "https://www.paypal.com/biz/fund?id=BEHTAS8WARM68" } ],
+  "keywords": [
+    "crop",
+    "gd",
+    "image",
+    "render",
+    "rotate",
+    "scale",
+    "text"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    { "name": "Opplaud LLC", "email": "dev.support@aponica.com" }
+  ],
+  "require": {
+    "php": ">=8.1",
+    "aponica/assert-properties-php": "^2.0"
+    },
+  "autoload": {
+    "files": [
+      "src/fCenterText.php",
+      "src/fCenterTextLines.php",
+      "src/fiFitImage.php",
+      "src/fnFittedTextHeight.php",
+      "src/fiLoadOrientedImage.php"
+    ],
+    "psr-4": {"Aponica\\ImageUtils\\": "src" }
+  }
+}
