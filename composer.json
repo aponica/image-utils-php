@@ -1,6 +1,6 @@
 {
   "name": "aponica/image-utils-php",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Common image manipulations in PHP.",
   "homepage" : "https://aponica.com/docs/image-utils-php",
   "funding": [ { "type": "paypal",
