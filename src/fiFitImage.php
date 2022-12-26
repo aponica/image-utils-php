@@ -5,7 +5,7 @@
 
 namespace Aponica\ImageUtils;
 
-use GDImage;
+use GdImage;
 
 //--------------------------------------------------------------------------
 /// Scales and/or crops a JPEG image to fit specified dimensions.
@@ -20,7 +20,7 @@ use GDImage;
 ///   The desired height of the image.
 ///
 /// @param $iImage
-///   The GDImage.
+///   The GdImage.
 ///
 /// @param $hOptions
 ///   A hash (associative array) of options, possibly including:
@@ -36,12 +36,12 @@ use GDImage;
 ///       the cropping to the starting edge (left or top), and a value of
 ///       `100` or more shifts it to the far edge (right or bottom).
 ///
-/// @returns GDImage:
+/// @returns GdImage:
 ///   The new image.
 //--------------------------------------------------------------------------
 
 function fiFitImage( int $nWidth, int $nHeight,
-  GDImage $iImage, array $hOptions = [] ) : GDImage {
+  GdImage $iImage, array $hOptions = [] ) : GdImage {
 
     $hSettings = array_merge(
       [ // defaults
