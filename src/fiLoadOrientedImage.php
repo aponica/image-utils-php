@@ -6,7 +6,7 @@
 namespace Aponica\ImageUtils;
 
 use Exception;
-use GDImage;
+use GdImage;
 
 //--------------------------------------------------------------------------
 /// Returns a (potentially rotation-corrected) JPEG image.
@@ -14,13 +14,13 @@ use GDImage;
 /// @param $zImgPath
 ///   The image file name.
 ///
-/// @returns GDImage:
+/// @returns GdImage:
 ///   The (potentially rotation-corrected) image.
 ///
 /// @thows Exception
 //--------------------------------------------------------------------------
 
-function fiLoadOrientedImage( string $zImgPath ) : GDImage {
+function fiLoadOrientedImage( string $zImgPath ) : GdImage {
 
   $iImage = imagecreatefromjpeg( $zImgPath );
 
